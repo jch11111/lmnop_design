@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>lmnop design</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://curthill.net/lmnop//js/parallax.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+    <script language="javascript">
+        // Add scrollspy to <body>
+
+        $("document").ready(function () {
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+            // Add smooth scrolling to all links inside a navbar
+            $("#myNavbar a").on('click', function (event) {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash (#)
+                var hash = this.hash;
+
+                // Using jQuery's () method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /** {
+            border: 1px solid white;
+        }*/
+        body {
+            position: relative;
+        }
+
+        .section {
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          height: 100vh;
+          font-family: 'Audiowide', cursive;
+          color: white;
+        }
+
+        #section1 {
+          background-image: 
+            linear-gradient( 
+              rgba(50, 150, 150, .65), 
+              rgba(50, 150, 150, .65)
+            )
+        }
+
+        #section1 h1 {
+          margin: 100px 0;
+          font-size: 50px;
+           text-shadow: 3px 3px #444;
+        }
+        
+        #section1 img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+
+        #imgSelf {
+            max-width: 260px;
+            border-radius: 50%;
+            border: 20px solid rgba(25, 75, 75, .3);
+        }
+
+        #section2 {
+          background-image: linear-gradient( 
+              rgba(50, 150, 150, .65), 
+              rgba(50, 150, 150, .65)
+            )
+        }
+        
+
+        #section2 h1 {
+          margin: 100px 0 50px 0;
+          font-size: 50px;
+           text-shadow: 3px 3px #444;
+        }
+
+        #section3 {
+        background-image: linear-gradient( 
+              rgba(50, 150, 150, .65), 
+              rgba(50, 150, 150, .65)
+            )
+        }
+
+        #section3 h1 {
+          margin-top: 100px;
+          font-size: 50px;
+           text-shadow: 3px 3px #444;
+        }
+        .social-media-link {
+          max-width: 15%;
+          margin: 20px auto;
+            text-align: center;
+        }
+
+        .social-media-link img {
+            max-width: 50px;
+            border-radius: 50%;
+        }
+
+        #imgLinkedIn {
+            width: 67px;
+            border-radius: 50%;            
+        }
+
+        .porfolio-grid {
+          bacground-color: orange;
+          text-align: center;
+          padding: 0;
+          margin-bottom: 20px
+        }
+
+        .porfolio-grid img {
+            max-width: 340px;
+ }
+
+        .col2 {
+            width: 300px;
+            height: 600px;
+        }
+
+        .contact-info {
+            width: 25%;
+            margin: 80px auto;
+            font-size: 1.5em;
+            border-radius: 50%;
+            border: 20px solid rgba(75, 225, 225, .20);
+        }
+
+        .contact-info>div {
+            margin-top: 130px;    
+            margin-bottom: 110px;
+            text-align: center;
+        }
+
+        .contact-item {
+            text-align: right;
+        }
+        .contact-value {
+            text-align: left;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">lmnop design</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Home</a></li>
+                        <li><a href="#section2">Portfolio</a></li>
+                        <li><a href="#section3">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>htt
+
+
+<div id="section1" class="parallax-window container-fluid section" data-parallax="scroll" data-image-src="http://curthill.net/lmnop/images/waves.jpg">
+    <h1 class="text-center">
+        lmnop design<br/>
+    </h1>
+
+    <img src="http://curthill.net/lmnop/images/self.PNG" class="image-responsive center-block" id="imgSelf"/>
+
+    <div class="social-media-link footer navbar-fixed-bottom">
+        <a href="https://www.facebook.com/curt.hill.923" target="_blank">
+            <img src="https://www.facebookbrand.com/img/assets/asset.f.logo.lg.png"/>
+        </a>
+        <a href="https://www.linkedin.com/in/hillcurt" target="_blank">
+            <img id="imgLinkedIn" src="http://thelinkedinman.com/wp-content/plugins/social-media-feather/synved-social/image/social/regular/64x64/linkedin.png"/>
+        </a>
+    </div>
+
+</div>
+
+    <div id="section2" class="parallax-window container-fluid section" data-parallax="scroll" data-image-src="http://curthill.net/lmnop/images/ocean.jpg">
+
+        <h1 class="text-center">portfolio<br /></h1>
+        <div class="container-fluid portfolio-content">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-3 porfolio-grid">
+                    <a href="#" target="_blank">
+                        <img src="http://curthill.net/lmnop/images/trans.jpg" />
+                    </a>
+                </div>
+                <div class="col-xs-3 porfolio-grid">
+                    <a href="http://curthill.net/islands/islands.htm" target="_blank">
+                        <img src="http://curthill.net/lmnop/images/desarbres.jpg" />
+                    </a>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-3 porfolio-grid">
+                    <a href="#" target="_blank">
+                        <img src="http://curthill.net/lmnop/images/mer.jpg" />
+                    </a>
+                </div>
+                <div class="col-xs-3 porfolio-grid">
+                    <a href="#" target="_blank">
+                        <img src="http://curthill.net/lmnop/images/year3010.jpg" />
+                    </a>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="section3" class="parallax-window container-fluid section" data-parallax="scroll" data-image-src="http://curthill.net/lmnop/images/sand.JPG">
+        <h1 class="text-center">contact</h1>
+        <div class="container-fluid contact-info">
+            <div>
+                <div class="row">
+                    <div class="contact-item col-xs-3 contact-item"><i class="fa fa-envelope fa-lg"></i></div>
+                    <div class="contact-item col-xs-8 contact-value">nwres1@yahoo.com</div>
+                </div>
+                <div class="row">
+                    <div class="contact-item col-xs-3 contact-item"><i class="fa fa-phone-square fa-lg"></i></div>
+                    <div class="contact-item col-xs-8 contact-value">206-706-7041</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
